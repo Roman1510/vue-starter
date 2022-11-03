@@ -3,8 +3,8 @@ import { computed } from "vue";
 import { Icon } from "@iconify/vue";
 import { RouterLink, RouterView } from "vue-router";
 import { useCounterStore } from "./stores/counter";
-const counterStore = useCounterStore();
 
+const counterStore = useCounterStore();
 const count = computed(() => counterStore.count);
 const doubleCount = computed(() => counterStore.doubleCount);
 </script>
